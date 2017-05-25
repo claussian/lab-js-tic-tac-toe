@@ -4,35 +4,41 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <script src = "script.js" async></script>
+  <script src = "js/scripts.js" async></script>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
   <div class = "container">
     <button id="reset">Clear Board</button>
   </div>
   <h2 class = "playerTurn">It is X's turn</h2>
-  <table>
+  <table class="board">
     <thead>
       <tr>
-        <td data-num="0"></td>
-        <td data-num="1"></td>
-        <td data-num="2"></td>
+        <td data-num="0" class="empty"></td>
+        <td data-num="1" class="empty"></td>
+        <td data-num="2" class="empty"></td>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td data-num="3"></td>
-        <td data-num="4"></td>
-        <td data-num="5"></td>
+        <td data-num="3" class="empty"></td>
+        <td data-num="4" class="empty"></td>
+        <td data-num="5" class="empty"></td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td data-num="6"></td>
-        <td data-num="7"></td>
-        <td data-num="8"></td>
+        <td data-num="6" class="empty"></td>
+        <td data-num="7" class="empty"></td>
+        <td data-num="8" class="empty"></td>
       </tr>
     </tfoot>
   </table>
+
+  <script type="text/template">
+    <td data-num="{{num}}" class="{{class}}"></td>
+  </script>
 </body>
 </html>

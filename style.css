@@ -37,6 +37,16 @@ tfoot tr td{
   border-bottom: none;
 }
 
+td.axe {
+  background-color: #85144b;
+  color: white;
+}
+
+td.oh {
+  background-color: #FF851B;
+  color: black;
+  font-style: bold;
+}
 .container, .playerTurn {
   text-align: center;
 }
